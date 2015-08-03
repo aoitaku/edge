@@ -1,0 +1,109 @@
+;EDGE用アニメーションデータ
+ANIME_VERSION=1
+
+
+;--------------------------
+PATTERN_NAME=wait_left
+
+	FRAME_NUMBER=1
+		FILENAME=D:\dev\char.large.png
+		WIN_TITLE=char.large.png
+		SRC_X=0
+		SRC_Y=0
+		LAYER_NUM=0
+		WIDTH=32
+		HEIGHT=48
+		DEST_X=0
+		DEST_Y=0
+		DELAY=33
+		LAYER_ADD=0
+		CKEY_ENABLE=0
+		CKEY_NUM=0
+
+
+;--------------------------
+PATTERN_NAME=wait_right
+
+	FRAME_NUMBER=1
+		FILENAME=D:\dev\char.large.png
+		WIN_TITLE=char.large.png
+		SRC_X=0
+		SRC_Y=48
+		LAYER_NUM=0
+		WIDTH=32
+		HEIGHT=48
+		DEST_X=0
+		DEST_Y=0
+		DELAY=33
+		LAYER_ADD=0
+		CKEY_ENABLE=0
+		CKEY_NUM=0
+
+
+;--------------------------
+PATTERN_NAME=walk_left
+
+	FRAME_NUMBER=1
+		FILENAME=D:\dev\char.large.png
+		WIN_TITLE=char.large.png
+		SRC_X=32
+		SRC_Y=0
+		LAYER_NUM=0
+		WIDTH=32
+		HEIGHT=48
+		DEST_X=0
+		DEST_Y=0
+		DELAY=30
+		LAYER_ADD=0
+		CKEY_ENABLE=0
+		CKEY_NUM=0
+
+	FRAME_NUMBER=2
+		FILENAME=D:\dev\char.large.png
+		WIN_TITLE=char.large.png
+		SRC_X=64
+		SRC_Y=0
+		LAYER_NUM=0
+		WIDTH=32
+		HEIGHT=48
+		DEST_X=0
+		DEST_Y=0
+		DELAY=30
+		LAYER_ADD=0
+		CKEY_ENABLE=0
+		CKEY_NUM=0
+
+
+;--------------------------
+PATTERN_NAME=walk_right
+
+	FRAME_NUMBER=1
+		FILENAME=D:\dev\char.large.png
+		WIN_TITLE=char.large.png
+		SRC_X=32
+		SRC_Y=48
+		LAYER_NUM=0
+		WIDTH=32
+		HEIGHT=48
+		DEST_X=0
+		DEST_Y=0
+		DELAY=100
+		LAYER_ADD=0
+		CKEY_ENABLE=0
+		CKEY_NUM=0
+
+	FRAME_NUMBER=2
+		FILENAME=D:\dev\char.large.png
+		WIN_TITLE=char.large.png
+		SRC_X=64
+		SRC_Y=48
+		LAYER_NUM=0
+		WIDTH=32
+		HEIGHT=48
+		DEST_X=0
+		DEST_Y=0
+		DELAY=100
+		LAYER_ADD=0
+		CKEY_ENABLE=0
+		CKEY_NUM=0
+
