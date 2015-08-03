@@ -3,7 +3,7 @@ require 'offside_rule'
 module Edge
 
   class AnmTransformer < Parslet::Transform
-    rule({:identifier => simple(:identifier), :value => simple(:value)}) do
+    rule(:identifier => simple(:identifier), :value => simple(:value)) do
       id = identifier.to_s.downcase.to_sym
       val = case id
       when :filename
@@ -14,6 +14,26 @@ module Edge
         value.to_i
       end
       { id => val }
+    end
+    rule(:content => {:anime_version => simple(:anime_version)}, :children => []) do
+      { anime_version: anime_version.to_s }
+    end
+    rule(:content => {:comment => simple(:comment)}, :children => []) do
+      { comment: comment.to_s }
+    end
+    rule(
+      :content => { :pattern_name => simple(:pattern_name) },
+      :children => subtree(:subtree)
+    ) do
+      {
+        pattern_name.to_s.to_sym => [
+          *subtree.map {|frame|
+            Hash[*frame[:children].map {|param|
+              param[:content].to_a
+            }.flatten]
+          }
+        ]
+      }
     end
   end
 
